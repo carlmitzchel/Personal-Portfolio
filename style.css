@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #829191 #595959;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #59595900;
+  border-radius: 0px 15px 15px 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #829191;
+  border-radius: 100px;
+  border: 0px solid #000000;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow-y: hidden;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  height: 500%;
+  background: radial-gradient(
+      circle at top left,
+      transparent 9%,
+      #151414 10%,
+      #151414 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      transparent 9%,
+      #151414 10%,
+      #151414 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at top right,
+      transparent 9%,
+      #151414 10%,
+      #151414 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      transparent 9%,
+      #151414 10%,
+      #151414 15%,
+      transparent 16%
+    ),
+    radial-gradient(circle, transparent 25%, #171717 26%),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      #151414 47%,
+      #151414 52%,
+      transparent 53%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      #151414 47%,
+      #151414 52%,
+      transparent 53%
+    );
+  background-size: 6em 6em;
+  background-color: #171717;
+  opacity: 1;
+}
+
+.main-container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 7px 8px 17px -7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 7px 8px 17px -7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 8px 17px -7px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12.9px);
+  -webkit-backdrop-filter: blur(12.9px);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 700px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+section {
+  height: 700px;
+  color: #ebebeb;
+  padding: 20px;
+  padding-right: 10px;
+}
+
+.section-1 img {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.section-1 h1 {
+  font-size: 2em;
+}
+
+.section-1 p {
+  text-align: right;
+  padding-top: 90px;
+  font-size: 1.2em;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+.subtext {
+  width: 70%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+p > span {
+  background: #e5d352;
+  background: linear-gradient(to bottom right, #e5d352 35%, #040303 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 692ms ease-out;
+}
+
+.subtext:hover span {
+  transform: translate(0px, 0px) scale(1.3, 1.3);
+}

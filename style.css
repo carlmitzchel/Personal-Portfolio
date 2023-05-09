@@ -123,6 +123,10 @@ section {
 }
 
 .section-1 > .img-hover {
+  display: none;
+}
+
+.section-1 > .img-hover {
   padding: 20px 20px 20px 30px;
   max-width: 400px;
 }
